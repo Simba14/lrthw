@@ -1,0 +1,89 @@
+ruby -
+v -
+e.g. ruby -v returns your Ruby version
+
+irb - interactive ruby shell. Once irb runs you can then type Ruby code and see the results immediately.
+
+.rb - ruby file
+.txt - text file
+
+puts - prints statement and inserts a new line character after it
+
+# - (Octothorpe) Creates a comment (code that is ignored)
+=begin/=end - Creates a comment within the two commands
+
+Math related:
++ plus
+- minus
+/ divide
+* multiply
+% modulus
+< less-than
+> greater-than
+<= less-than-equal
+>= greater-than-equal
+= assigns value to variables
+== compares whether two sides are equal
+.0 floating point number
+
+"" or '' - string
+#{} - string interpolation, allows you to include computations and the values of variables within a string
+%{} - same as above,  when you want to apply the same format to multiple values.
+\n - inserts a new line character
+\t - inserts tab
+%q - acts as a single quoted string and can be used to avoid internally escaping quotes with backslashes
+""" - works like a string, but you also can put as many lines of text as you want until you type """ again
+
+\ - encodes difficult to type characters into a string e.g. \"
+
+Escape	What it does.
+\\	Backslash ()
+\'	Single-quote (')
+\"	Double-quote (")
+\a	ASCII bell (BEL)
+\b	ASCII backspace (BS)
+\f	ASCII formfeed (FF)
+\n	ASCII linefeed (LF)
+\r	ASCII Carriage Return (CR)
+\t	ASCII Horizontal Tab (TAB)
+\uxxxx	Character with 16-bit hex value xxxx (Unicode only)
+\v	ASCII vertical tab (VT)
+\ooo	Character with octal value ooo
+\xhh	Character with hex value hh
+
+gets.chomp - gets user input
+ARGV - Argument variable. Taken when the programme is run
+note:
+gets.chomp() = read ARGV first
+STDIN.gets.chomp() = read user's input
+
+.to_i - converts variable to integer
+.to_s - converts variable to string
+.to_f - converts variable to float
+
+open() - opens the file
+close -- Closes the file. Like File->Save.. in your editor.
+read -- Reads the contents of the file. You can assign the result to a variable.
+readline -- Reads just one line of a text file.
+truncate -- Empties the file. Watch out if you care about the file.
+write('stuff') -- Writes "stuff" to the file.
+
+You give a file/variable a command by using the . (dot or period), the name of the command, and parameters
+.length - returns length of the preceding variable/file
+
+w' then you're saying "open this file in 'write' mode," thus the 'w' character. There's also 'r' for "read," 'a' for append, and modifiers on these.
+
+functions:
+Functions do three things:
+
+They name pieces of code the way variables name strings and numbers.
+They take arguments the way your scripts take ARGV.
+Using 1 and 2 they let you make your own "mini-scripts" or "tiny commands."
+
+def function_name(arg1, arg2)
+  e.g. puts statement
+end
+
+function_name(arg1, arg2)
+
+return -  sets variables to be a value from a function.
